@@ -99,6 +99,25 @@ python -m pip install requests   # Para requisições HTTP
 python -m pip install numpy      # Para cálculos numéricos
 ```
 
+### 📚 Bibliotecas Já Instaladas
+
+| Biblioteca | Versão | Descrição |
+|---|---|---|
+| 🐍 **Python** | 3.12.4 | Interpretador Python |
+| 📦 **pip** | 24.0+ | Gerenciador de pacotes |
+| 🐼 **pandas** | 2.3.3 | Análise e manipulação de dados |
+| 📊 **matplotlib** | 3.10.6 | Criação de gráficos e visualizações |
+| 🔢 **numpy** | 2.3.3 | Computação numérica |
+| 🌐 **requests** | 2.32.5 | Requisições HTTP |
+| 🌟 **flask** | 3.1.0 | Framework web |
+| 🖼️ **pillow** | 11.3.0 | Processamento de imagens |
+
+### 🧪 Teste de Instalação
+Para verificar se tudo está funcionando:
+```bash
+python -c "import pandas, matplotlib, numpy; print('✅ Todas as bibliotecas funcionando!')"
+```
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -110,6 +129,9 @@ aulaPhyton/
 ├── 📁 aula1/                     # Primeira aula
 │   ├── 🐍 main.py               # Jogo da Velha
 │   └── 🐍 aula1.py              # Exemplos básicos
+│
+├── 📁 aula2/                     # Segunda aula
+│   └── 🐍 exemplo_pandas.py     # Pandas e Matplotlib
 │
 └── 📁 projetos/                  # Projetos futuros
     └── (em desenvolvimento)
@@ -149,6 +171,27 @@ Contém exemplos práticos de:
 ```bash
 python aula1/aula1.py
 ```
+
+### 📊 Análise de Dados com Pandas
+Localização: `aula2/exemplo_pandas.py`
+
+Demonstra o uso prático de:
+- 🐼 **Pandas** para manipulação de dados
+- 📊 **Matplotlib** para visualização
+- 📈 Criação de gráficos
+- 💾 Salvamento de dados em CSV
+- 📊 Estatísticas básicas
+
+**Como executar:**
+```bash
+python aula2/exemplo_pandas.py
+```
+
+**O que faz:**
+- Cria dados de funcionários
+- Calcula estatísticas (média de idade, salário)
+- Gera gráficos de dispersão e barras
+- Salva dados em arquivo CSV
 
 ## 🛠️ Como Executar os Códigos
 
