@@ -22,7 +22,47 @@ df = pd.DataFrame(dados)
 print("\nDADOS CRIADOS:")
 print(df)
 
-print(f"\nESTATÍSTICAS:")
+# ==============================================
+# DEMONSTRAÇÃO: ALTERANDO VARIÁVEIS
+# ==============================================
+
+print("\n" + "="*50)
+print("DEMONSTRAÇÃO: ALTERANDO VARIÁVEIS APÓS IMPRIMIR")
+print("="*50)
+
+# Variável simples - valor inicial
+salario_inicial = 5000
+print(f"\n1. Salário inicial: R$ {salario_inicial}")
+
+# Alterando o valor da variável
+salario_inicial = salario_inicial + 1000  # Aumento de R$ 1000
+print(f"   Após aumento: R$ {salario_inicial}")
+
+# Exemplo com string
+nome_funcionario = "João"
+print(f"\n2. Nome inicial: {nome_funcionario}")
+nome_funcionario = "João Silva"  # Adicionando sobrenome
+print(f"   Nome completo: {nome_funcionario}")
+
+# Exemplo com lista
+idades = [25, 30, 35]
+print(f"\n3. Idades originais: {idades}")
+idades.append(28)  # Adicionando nova idade
+print(f"   Após adicionar idade: {idades}")
+
+# Exemplo com DataFrame - alterando dados
+print(f"\n4. ALTERANDO DADOS NO DATAFRAME:")
+print(f"   Salário do Bruno antes: R$ {df.loc[df['Nome'] == 'Bruno', 'Salário'].values[0]}")
+
+# Alterando o salário do Bruno
+df.loc[df['Nome'] == 'Bruno', 'Salário'] = 7500
+print(f"   Salário do Bruno depois: R$ {df.loc[df['Nome'] == 'Bruno', 'Salário'].values[0]}")
+
+# Mostrando a tabela atualizada
+print(f"\n5. TABELA ATUALIZADA:")
+print(df)
+
+print(f"\nESTATÍSTICAS RECALCULADAS:")
 print(f"Idade média: {df['Idade'].mean():.1f} anos")
 print(f"Salário médio: R$ {df['Salário'].mean():.2f}")
 print(f"Pessoa mais velha: {df.loc[df['Idade'].idxmax(), 'Nome']} ({df['Idade'].max()} anos)")
